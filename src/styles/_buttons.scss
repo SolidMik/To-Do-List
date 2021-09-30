@@ -1,0 +1,51 @@
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 2px solid #008CBA;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    position: relative;
+    padding: 20px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.add {
+    background-color: rgb(119, 102, 228);
+    box-shadow: 0 5px #999;
+}
+
+.clr {
+    background-color: lightsalmon;
+}
+
+.clr:after {
+    content: "";
+    background: #FFFF99;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: 1.5s
+  }
+  
+.clr:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.add:hover {
+    background-color: dodgerblue;
+}
+
+.add:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
+}
